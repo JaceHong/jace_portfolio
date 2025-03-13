@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./Navbar.css";
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
@@ -8,21 +9,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-content">
           <motion.a
             onClick={() => scrollToSection("home")}
-            className="text-2xl font-bold text-gray-800 cursor-pointer"
+            className="navbar-logo"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Jace
           </motion.a>
-          <div className="flex space-x-8">
+          <div className="navbar-links">
             <motion.a
               onClick={() => scrollToSection("home")}
-              className="text-gray-600 hover:text-gray-900 cursor-pointer font-medium"
+              className="navbar-link"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -30,7 +31,7 @@ const Navbar = () => {
             </motion.a>
             <motion.a
               onClick={() => scrollToSection("about")}
-              className="text-gray-600 hover:text-gray-900 cursor-pointer font-medium"
+              className="navbar-link"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -38,7 +39,7 @@ const Navbar = () => {
             </motion.a>
             <motion.a
               onClick={() => scrollToSection("projects")}
-              className="text-gray-600 hover:text-gray-900 cursor-pointer font-medium"
+              className="navbar-link"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -46,12 +47,29 @@ const Navbar = () => {
             </motion.a>
             <motion.a
               onClick={() => scrollToSection("contact")}
-              className="text-gray-600 hover:text-gray-900 cursor-pointer font-medium"
+              className="navbar-link"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Contact
             </motion.a>
+          </div>
+          <div className="mobile-menu-button">
+            <button className="menu-button">
+              <svg
+                className="menu-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

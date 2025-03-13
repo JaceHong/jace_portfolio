@@ -1,0 +1,84 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.navbar-logo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-link {
+  color: #374151;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: #2563eb;
+}
+
+.mobile-menu-button {
+  display: none;
+}
+
+.menu-button {
+  color: #374151;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.menu-button:hover {
+  color: #2563eb;
+}
+
+.menu-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+}
