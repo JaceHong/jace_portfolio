@@ -31,6 +31,38 @@ const Projects = () => {
       github: "https://github.com/yourusername/project2",
       demo: "https://project2-demo.com",
     },
+    {
+      id: 3,
+      title: "Project 3",
+      description: "A brief description of project 3",
+      image: "https://via.placeholder.com/300x200",
+      github: "https://github.com/yourusername/project3",
+      demo: "https://project2-demo.com",
+    },
+    {
+      id: 4,
+      title: "Project 4",
+      description: "A brief description of project 4",
+      image: "https://via.placeholder.com/300x200",
+      github: "https://github.com/yourusername/project4",
+      demo: "https://project2-demo.com",
+    },
+    {
+      id: 5,
+      title: "Project 5",
+      description: "A brief description of project 5",
+      image: "https://via.placeholder.com/300x200",
+      github: "https://github.com/yourusername/project5",
+      demo: "https://project2-demo.com",
+    },
+    {
+      id: 6,
+      title: "Project 6",
+      description: "A brief description of project 6",
+      image: "https://via.placeholder.com/300x200",
+      github: "https://github.com/yourusername/project6",
+      demo: "https://project2-demo.com",
+    },
   ];
 
   return (

@@ -21,25 +21,37 @@ export const Title = styled(motion.h1)`
 `;
 
 export const ProjectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
 `;
 
 export const ProjectCard = styled(motion.div)`
+  cursor: pointer;
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
   background: white;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
 `;
 
-export const ProjectImage = styled.div`
+export const ProjectImage = styled.img`
+  width: 100%;
   height: 200px;
+  object-fit: cover;
   background-color: #f0f0f0;
-  // You can replace this with an actual image
 `;
 
-export const ProjectContent = styled.div`
+export const ProjectInfo = styled.div`
   padding: 1.5rem;
 `;
 
@@ -67,8 +79,4 @@ export const ProjectLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-`;
-
-export const ProjectInfo = styled.div`
-  padding: 1.5rem;
 `;

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -100,7 +99,7 @@ const Navbar = () => {
               </svg>
             </button>
 
-            {/* 모바일 메뉴 */}
+            {/* mobile menu */}
             {isMenuOpen && (
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
