@@ -97,15 +97,15 @@ const Contact = () => {
         >
           <ContactItem>
             <ContactIcon>📧</ContactIcon>
-            <p>your.email@example.com</p>
+            <p>hsh96111296@gmail.com</p>
           </ContactItem>
           <ContactItem>
             <ContactIcon>📱</ContactIcon>
-            <p>+1 234 567 890</p>
+            <p>+1 437 771 3343</p>
           </ContactItem>
           <ContactItem>
             <ContactIcon>📍</ContactIcon>
-            <p>Your Location</p>
+            <p>Thornhill, ON, Canada</p>
           </ContactItem>
         </ContactInfo>
         <SocialLinks
@@ -116,7 +116,7 @@ const Contact = () => {
           <SocialTitle>Connect With Me</SocialTitle>
           <SocialIcons>
             <SocialIcon
-              href="https://github.com/yourusername"
+              href="https://github.com/JaceHong"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
