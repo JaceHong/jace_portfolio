@@ -114,26 +114,6 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <SocialTitle>Connect With Me</SocialTitle>
-          <SocialIcons>
-            <SocialIcon
-              href="https://github.com/JaceHong"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaGithub />
-            </SocialIcon>
-            <SocialIcon
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaLinkedin />
-            </SocialIcon>
-          </SocialIcons>
         </SocialLinks>
       </Container>
     </ContactSection>

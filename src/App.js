@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -14,6 +15,8 @@ const AppContainer = styled.div`
 const MainContent = styled.main`
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 5rem;
+  flex: 1;
 `;
 
 function App() {
@@ -26,6 +29,7 @@ function App() {
         <Projects />
         <Contact />
       </MainContent>
+      <Footer />
     </AppContainer>
   );
 }
